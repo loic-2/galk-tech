@@ -20,6 +20,7 @@ export default {
   .content{
     position: relative;
     top: 50px;
+    overflow-x: hidden;
   }
 
 </style>

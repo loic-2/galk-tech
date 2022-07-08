@@ -26,6 +26,9 @@
                 <input type="submit" @click="gotoHome"  class="form-control submit" value="Se connecter">
             </div>
         </div>
+        <div class="text-align-right gotoSignin mb-3">
+            <router-link to="/signin">Vous n'avez pas de compte ?</router-link>
+        </div>
     </div>
   </div>
 </template>
@@ -46,7 +49,7 @@ export default {
 <style scoped>
 .title{
     background-color: rgba(38, 40, 92, 0.7);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 30px;
 }
 .title>h3{
@@ -55,5 +58,9 @@ export default {
 div > .submit{
     background-color: rgba(38, 40, 92, 0.7);
     color: white;
+    font-style: normal;
+}
+.gotoSignin{
+    margin-left: 80%;
 }
 </style>

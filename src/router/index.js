@@ -5,6 +5,7 @@ import Login from '../views/Login.vue'
 import SignIn from '../views/SignIn.vue'
 import Compteur from '../views/Compteur.vue'
 import Users from '../views/Users.vue'
+import Home from '../components/Home.vue'
 import Notifications from '../views/Notifications.vue'
 Vue.use(VueRouter)
 
@@ -14,6 +15,10 @@ const routes = [
     name: 'home',
     component: HomeView,
     children:[
+      {
+        path:'/home',
+        component:Home
+      },
       {
         path:'/object',
         component:Compteur

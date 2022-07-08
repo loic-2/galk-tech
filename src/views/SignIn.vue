@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <div class="connexion" style="margin-top:12%;">
-       <div class="title"> <h3>Connexion</h3></div>
+       <div class="title"> <h3>Inscription</h3></div>
         <div class="form">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
