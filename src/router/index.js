@@ -1,14 +1,42 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Login from '../views/Login.vue'
+import SignIn from '../views/SignIn.vue'
+import Compteur from '../views/Compteur.vue'
+import Users from '../views/Users.vue'
+import Notifications from '../views/Notifications.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    children:[
+      {
+        path:'/object',
+        component:Compteur
+      },
+      {
+        path:'/notifications',
+        component:Notifications
+      },
+      {
+        path:'/users',
+        component:Users
+      }
+    ]
+  },
+  {
+    path: '/signin',
+    name: 'signin',
+    component: SignIn
+  },
+  {
+    path:'/',
+    name:'login',
+    component:Login
   },
   {
     path: '/about',
